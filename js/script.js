@@ -35,11 +35,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     const rating = document.createElement('p');
                     rating.textContent = `Rating: ${game.RatingAverage}`;
 
+                    const topics = document.createElement('p');
+                    rating.textContent = `Categories: ${game.Domains}`;
+                    
                     gameDiv.appendChild(name);
                     gameDiv.appendChild(minAge);
                     gameDiv.appendChild(year);
                     gameDiv.appendChild(players);
                     gameDiv.appendChild(rating);
+                    gameDiv.appendChild(topics);
 
                     resultsDiv.appendChild(gameDiv);
                 });
