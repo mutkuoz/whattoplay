@@ -1,7 +1,7 @@
 import pandas as pd
 from flask import Flask, request
 import numpy as np
-data = pd.read_csv('C:/Users/gsutk/Desktop/Projects/BoardGameFinder/bgg_dataset.csv', delimiter=';')
+data = pd.read_csv('/bgg_dataset.csv', delimiter=';')
 domains = data['Domains'].unique()
 print(domains)
 app = Flask(__name__)
