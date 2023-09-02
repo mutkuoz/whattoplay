@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Game Finder</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <header>
+        <h1>Game Finder</h1>
+    </header>
+    <main>
+        <div class="search-container">
+            <label for="category">Select Category:</label>
+
+            <select id="category" name="category">
+                <!-- Options for game categories go here -->
+                <option value="ALL">All</option>
+                <option value="Strategy Games">Strategy Games</option>
+                <option value="Thematic Games">Thematic Games</option>
+                <option value="Wargames">Wargames</option>
+                <option value="Family Games">Family Games</option>
+                <option value="Customizable Games">Customizable Games</option>
+                <option value="Abstract Games">Abstract Games</option>
+                <option value="Party Games">Party Games</option>
+                <option value="Children's Games">Children's Games</option>
+            </select>
+
+            <label for="player-count">Player Count:</label>
+            <input type="number" id="player-count" name="player-count">
+            <label for="age">Age of Youngest Player:</label>
+            <input type="number" id="age" name="age">
+            <label for="rating">Minimum Rating:</label>
+            <input type="number" id="rating" name="rating">
+            <button id="search-btn">Search</button>
+        </div>
+        <div id="results">
+            <!-- Results from the server will be displayed here -->
+        </div>
+    </main>
+    <script src="script.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
