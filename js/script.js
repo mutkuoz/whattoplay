@@ -21,19 +21,19 @@ document.addEventListener('DOMContentLoaded', () => {
                     gameDiv.classList.add('game');
 
                     const name = document.createElement('h2');
-                    name.textContent = game.name;
+                    name.textContent = game.Name;
 
                     const minAge = document.createElement('p');
-                    minAge.textContent = `Minimum Age: ${game['min-age']}`;
+                    minAge.textContent = `Minimum Age: ${game['MinAge']}`;
 
                     const year = document.createElement('p');
-                    year.textContent = `Year Published: ${game.year}`;
+                    year.textContent = `Year Published: ${game.YearPublished}`;
 
                     const players = document.createElement('p');
-                    players.textContent = `Players: ${game.players}`;
+                    players.textContent = `Players: ${game.MinPlayers} to ${game.MaxPlayers}`;
 
                     const rating = document.createElement('p');
-                    rating.textContent = `Rating: ${game.rating}`;
+                    rating.textContent = `Rating: ${game.RatingAverage}`;
 
                     gameDiv.appendChild(name);
                     gameDiv.appendChild(minAge);
