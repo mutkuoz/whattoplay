@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const rating = document.getElementById('rating').value;
 
         // Send a GET request to your Flask server with the parameters
-        fetch(`http://boardgames.pythonanywhere.com/search?category=${category}&playerCount=${playerCount}&age=${age}&rating=${rating}`)
+        fetch(`https://boardgames.pythonanywhere.com/search?category=${category}&playerCount=${playerCount}&age=${age}&rating=${rating}`)
             .then(response => response.json())
             .then(data => {
                 // Clear previous results
